@@ -1,0 +1,22 @@
+{
+  "name": "driver-food",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SaaS multiempresa para operacao de pedidos, rotas e motoboys.",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "corepack pnpm --parallel --filter ./apps/* dev",
+    "build": "corepack pnpm --filter @driver-food/planner build && corepack pnpm --filter ./apps/api build && corepack pnpm --filter ./apps/web build",
+    "test": "node --test scripts/package-manager-contract.test.mjs && corepack pnpm --filter @driver-food/planner test && corepack pnpm --filter ./apps/api test && corepack pnpm --filter ./apps/web test",
+    "typecheck": "corepack pnpm --filter @driver-food/planner typecheck && corepack pnpm --filter ./apps/api typecheck && corepack pnpm --filter ./apps/web typecheck",
+    "check": "corepack pnpm typecheck && corepack pnpm test && corepack pnpm build",
+    "seed": "corepack pnpm --filter ./apps/api seed",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
+  }
+}

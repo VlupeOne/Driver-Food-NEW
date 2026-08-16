@@ -1,0 +1,24 @@
+{
+  "name": "Driver Food",
+  "short_name": "Driver Food",
+  "description": "Operação de entregas para restaurantes e motoboys.",
+  "start_url": "/#/entregador",
+  "display": "standalone",
+  "background_color": "#f5f7f9",
+  "theme_color": "#001b31",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/assets/driver-food-mark-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/driver-food-mark.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

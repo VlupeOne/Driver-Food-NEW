@@ -1,0 +1,59 @@
+/* Ajustes finais de legibilidade para monitores desktop. */
+@media (min-width: 761px) {
+  .topbar__heading p,
+  .kpi-rail__item span,
+  .kpi-rail__couriers,
+  .pane-header > div > span,
+  .queue-columns,
+  .queue-footer,
+  .map-canvas__legend button,
+  .alerts-rail__item,
+  .alerts-rail__all { font-size: 10px; }
+
+  .queue-row { min-height: 59px; }
+  .queue-row__sequence,
+  .queue-row__time,
+  .queue-row__order strong { font-size: 11px; }
+  .queue-row__time small,
+  .queue-row__order span,
+  .queue-row__order small { font-size: 10px; }
+
+  .map-alert { width: 230px; }
+  .map-alert strong { font-size: 11px; }
+  .map-alert span,
+  .map-alert small,
+  .map-alert button { font-size: 10px; }
+  .map-canvas__provider { font-size: 9px; }
+
+  .route-detail__stops header strong { font-size: 13px; }
+  .route-detail__stops header > span:not(.status-tag),
+  .route-detail li,
+  .route-detail__return,
+  .route-detail__courier dl div { font-size: 10px; }
+  .route-detail li { min-height: 29px; }
+  .route-detail__courier > strong { font-size: 12px; }
+  .route-detail__courier .courier-row__state,
+  .route-detail__courier .button,
+  .select-like { font-size: 10px; }
+
+  .courier-row { min-height: 90px; }
+  .courier-row__state,
+  .courier-row > span:not(.courier-row__state):not(.courier-row__meta):not(.courier-radar),
+  .courier-row__meta,
+  .pane-link { font-size: 10px; }
+  .courier-row strong { font-size: 12px; }
+
+  .data-table th { font-size: 10px; }
+  .data-table td,
+  .data-table td strong { font-size: 11px; }
+  .data-table td small { font-size: 10px; }
+  .route-index__filters button,
+  .route-index__list strong,
+  .route-inspector h3,
+  .settings-fields strong { font-size: 11px; }
+  .route-index__list small,
+  .stops-list__item small,
+  .stops-list__item time,
+  .decision-explanation p,
+  .settings-fields small { font-size: 10px; }
+}
